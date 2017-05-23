@@ -25,16 +25,29 @@ namespace VenueSelectionSystem
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(cs))
+            string usertype = (string)ddlUsertype.SelectedValue;
+
+
+            if (chkAgree.Checked)
             {
-                SqlCommand cmd = new SqlCommand("insert into tblUsers values('" + txtUserName.Text + "','" + txtUserPassword.Text + "','" + ddlUsertype.SelectedValue + "');", con);
-                con.Open();
-                int totalRowsAffected= cmd.ExecuteNonQuery();
-                Response.Write("Registered");
+                if (usertype == "Admin")
+                {
+                    using (SqlConnection con = new SqlConnection(cs))
+                    {
+                        SqlCommand cmd = new SqlCommand("insert into tblUsers values('" + txtUserName.Text + "','" + txtUserPassword.Text + "','" + ddlUsertype.SelectedValue + "','" + txtName.Text + "','" + txtAddress.Text + "','" + txtEmail.Text + "','" + txtContactNumber.Text + "','','','','','not verified');", con);
+                        con.Open();
+                        int totalRowsAffected = cmd.ExecuteNonQuery();
+                        Response.Write("Registered");
 
-                con.Close();
+                        con.Close();
+                    }
+                }
             }
+            else
+            {
+                Response.Write("You haven't agreed terms and conditions...");
 
+            }
         }
     }
 }

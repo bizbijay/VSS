@@ -1,82 +1,44 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginForm.aspx.cs" Inherits="VenueSelectionSystem.mainForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="loginForm.aspx.cs" Inherits="VenueSelectionSystem.testtest" %>
+   <!DOCTYPE html>
+<html>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style5 {
-            width: 100%;
-        }
-        .auto-style6 {
-            width: 69px;
-        }
-        .auto-style7 {
-            width: 2px;
-        }
-        .auto-style8 {
-            height: 151px;
-        }
-        .auto-style9 {
-            height: 65px;
-        }
-    </style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Google-Style-Login.css">
 </head>
-<body style="height: 362px; width: 659px">
-    <form id="form1" runat="server" class="auto-style8">
 
-    
-        <table class="auto-style5">
-            <tr>
-                <td class="auto-style6">
-                    <asp:Label ID="Label4" runat="server" Text="UserName "></asp:Label>
-                </td>
-                <td class="auto-style7"><asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style6">
-                    <asp:Label ID="Label5" runat="server" Text="Password"></asp:Label>
-                </td>
-                <td class="auto-style7">
-        <asp:TextBox ID="txtUserpassword" runat="server" TextMode="Password"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style6">
-                    <asp:Label ID="Label6" runat="server" Text="User Type"></asp:Label>
-                </td>
-                <td class="auto-style7"><asp:DropDownList ID="ddlUsertype" runat="server">
-            <asp:ListItem Value="VenueManager">Venue Manager</asp:ListItem>
-            <asp:ListItem>Admin</asp:ListItem>
-        </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style6">&nbsp;</td>
-                <td class="auto-style7">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style6"><asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Log In" />
-                </td>
-                <td class="auto-style7">
-        <asp:Button ID="btnSignup" runat="server" Text="Sign Up" OnClick="btnSignup_Click" />
-    
-                </td>
-            </tr>
-        </table>
-
-    
-    &nbsp;
-    
-    &nbsp;<div class="auto-style9">
-            <asp:Label ID="Label7" runat="server" Text="Click OK to continue with user"></asp:Label>
+<body>
+    <div class="login-card"><img src="img/avatar_2x.png" class="profile-img-card">
+        <p class="profile-name-card"> </p>
+        <form class="form-signin" runat="server"><span class="reauth-email"> </span>
+       <asp:TextBox ID="txtUsername" runat="server" class="form-control" placeholder="Username"></asp:TextBox>
+            <%--<input class="form-control" type="text" placeholder="Username">--%>
+       <asp:TextBox ID="txtPassword" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
+            <%-- <input class="form-control" type="password" required="" placeholder="Password" id="inputPassword">--%>
+            <asp:DropDownList ID="ddlUsertype" runat="server" class="form-control" Height="42px">
+                <asp:ListItem>Select Usertype</asp:ListItem>
+                <asp:ListItem Value="admin">Admin</asp:ListItem>
+                <asp:ListItem Value="venuemanager">Venue Manager</asp:ListItem>
+            </asp:DropDownList>
+            <%--<select class="form-control" name="User Type">
+                <option value="">Usertype</option>
+                <option value="admin">Admin</option>
+            </select>--%>
             <br />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="OK" />
-        </div>
-    
-    
-    </form>
+           <asp:Button ID="btnLogin" runat="server" Text="Log in" class="btn btn-primary btn-block btn-lg btn-signin" OnClick="btnLogin_Click" />
+       <br />
+            <asp:Button ID="btnSignup" runat="server" Text="Button" class="btn btn-primary btn-block btn-lg btn-signin" OnClick="btnSignup_Click" />
+            <%--<button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign in</button>--%>
+        </form>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
+       

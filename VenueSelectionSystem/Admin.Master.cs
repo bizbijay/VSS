@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace VenueSelectionSystem
 {
-    public partial class UserForm : System.Web.UI.Page
+    public partial class Admin : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -35,6 +35,9 @@
         .auto-style10 {
             width: 119px;
         }
+        .auto-style11 {
+            margin-left: 40px;
+        }
     </style>
 </head>
 <body style="height: 368px; width: 824px">
@@ -77,7 +80,7 @@
                 <td class="auto-style5" title="General Information">
                     <asp:Label ID="Label5" runat="server" Text="Name"></asp:Label>
                 </td>
-                <td title="General Information">
+                <td title="General Information" class="auto-style11">
                     <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
                 </td>
             </tr>
@@ -142,7 +145,7 @@
                 </tr>
             </table>
             <br />
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="I agree all terms and conditions." />
+            <asp:CheckBox ID="chkAgree" runat="server" Text="I agree all terms and conditions." />
             <br />
             <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="Button1_Click" />
 
