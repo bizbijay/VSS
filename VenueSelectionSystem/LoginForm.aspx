@@ -31,7 +31,7 @@
             <br />
            <asp:Button ID="btnLogin" runat="server" Text="Log in" class="btn btn-primary btn-block btn-lg btn-signin" OnClick="btnLogin_Click" />
        <br />
-            <asp:Button ID="btnSignup" runat="server" Text="Button" class="btn btn-primary btn-block btn-lg btn-signin" OnClick="btnSignup_Click" />
+            <asp:Button ID="btnSignup" runat="server" Text="Sign up" class="btn btn-primary btn-block btn-lg btn-signin" OnClick="btnSignup_Click" />
             <%--<button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Sign in</button>--%>
         </form>
 

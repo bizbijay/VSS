@@ -82,8 +82,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RegistrationFrom.aspx" />
+    <Content Include="Registrationform.aspx" />
     <Content Include="VenueManagerForm.aspx" />
+    <Content Include="VenueManagerHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,13 +96,6 @@
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationFrom.aspx.cs">
-      <DependentUpon>RegistrationFrom.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegistrationFrom.aspx.designer.cs">
-      <DependentUpon>RegistrationFrom.aspx</DependentUpon>
-    </Compile>
     <Compile Include="testfortable.aspx.cs">
       <DependentUpon>testfortable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,6 +109,13 @@
     </Compile>
     <Compile Include="loginForm.aspx.designer.cs">
       <DependentUpon>loginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrationform.aspx.cs">
+      <DependentUpon>Registrationform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrationform.aspx.designer.cs">
+      <DependentUpon>Registrationform.aspx</DependentUpon>
     </Compile>
     <Compile Include="VenueManagerForm.aspx.cs">
       <DependentUpon>VenueManagerForm.aspx</DependentUpon>
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="AdminView.aspx.designer.cs">
       <DependentUpon>AdminView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VenueManagerHome.aspx.cs">
+      <DependentUpon>VenueManagerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VenueManagerHome.aspx.designer.cs">
+      <DependentUpon>VenueManagerHome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
