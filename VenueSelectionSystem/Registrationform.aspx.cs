@@ -15,11 +15,28 @@ namespace VenueSelectionSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                userGeneralInfo.Visible = true;
+                venueGeneralInfo.Visible = false;
+
+            }
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            if(ddlUsertype.SelectedValue=="admin")
+            {
+                userGeneralInfo.Visible = true;
+                venueGeneralInfo.Visible = false;
+            }
+            if (ddlUsertype.SelectedValue == "venuemanager")
+            {
+                userGeneralInfo.Visible = true;
+                venueGeneralInfo.Visible = true;
+
+            }
+
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)

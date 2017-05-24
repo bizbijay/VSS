@@ -51,12 +51,7 @@
         </nav>
 
 
-        <div class="container">
-
-            <div class="jumbotron">
-            <p>this is jumbotron</p>
-            </div>
-
+        <div class="container" id="mainContentPlace">
 
             <asp:ContentPlaceHolder ID="adminContentPlaceHolder" runat="server">
             </asp:ContentPlaceHolder>

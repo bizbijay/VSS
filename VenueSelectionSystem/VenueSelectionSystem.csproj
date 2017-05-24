@@ -72,8 +72,8 @@
     <Content Include="AdminViewAdmins.aspx" />
     <Content Include="AdminViewVenues.aspx" />
     <Content Include="AdminView.aspx" />
-    <Content Include="testfortable.aspx" />
     <Content Include="loginForm.aspx" />
+    <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,7 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Registrationform.aspx" />
-    <Content Include="VenueManagerForm.aspx" />
     <Content Include="VenueManagerHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -96,12 +95,12 @@
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="testfortable.aspx.cs">
-      <DependentUpon>testfortable.aspx</DependentUpon>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="testfortable.aspx.designer.cs">
-      <DependentUpon>testfortable.aspx</DependentUpon>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="loginForm.aspx.cs">
       <DependentUpon>loginForm.aspx</DependentUpon>
@@ -116,13 +115,6 @@
     </Compile>
     <Compile Include="Registrationform.aspx.designer.cs">
       <DependentUpon>Registrationform.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="VenueManagerForm.aspx.cs">
-      <DependentUpon>VenueManagerForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="VenueManagerForm.aspx.designer.cs">
-      <DependentUpon>VenueManagerForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminHome.aspx.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>

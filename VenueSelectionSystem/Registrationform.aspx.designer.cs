@@ -58,6 +58,15 @@ namespace VenueSelectionSystem {
         protected global::System.Web.UI.WebControls.DropDownList ddlUsertype;
         
         /// <summary>
+        /// userGeneralInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl userGeneralInfo;
+        
+        /// <summary>
         /// txtName control.
         /// </summary>
         /// <remarks>
@@ -92,6 +101,15 @@ namespace VenueSelectionSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContactnumber;
+        
+        /// <summary>
+        /// venueGeneralInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl venueGeneralInfo;
         
         /// <summary>
         /// txtVenuename control.

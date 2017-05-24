@@ -17,70 +17,70 @@
             <h1 class="well">Registration Form</h1>
             <div class="col-lg-12 well">
                 <div class="row">
-                    
-                        <h3>Account Info</h3>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label>Username</label>
-                                <asp:TextBox ID="username" runat="server" class="form-control" placeholder="choose username"></asp:TextBox>
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <asp:TextBox ID="userpassword" runat="server" class="form-control" placeholder="Enter Password"></asp:TextBox>
-                            </div>
-                            <div class="form-group">
-                                <label>Re- Enter Password</label>
-                                <asp:TextBox ID="confirmpassword" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
-                            </div>
-                            <div class="form-group">
-                                <label>Usertype</label>
-                                <asp:DropDownList ID="ddlUsertype" runat="server" class="form-control" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                                    <asp:ListItem Value="admin">Admin</asp:ListItem>
-                                    <asp:ListItem Value="venuemanager">Venue Manager</asp:ListItem>
-                                </asp:DropDownList>
-                            </div>
 
+                    <h3>Account Info</h3>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <asp:TextBox ID="username" runat="server" class="form-control" placeholder="choose username"></asp:TextBox>
                         </div>
-                   
+                        <div class="form-group">
+                            <label>Password</label>
+                            <asp:TextBox ID="userpassword" runat="server" class="form-control" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <label>Re- Enter Password</label>
+                            <asp:TextBox ID="confirmpassword" runat="server" class="form-control" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <label>Usertype</label>
+                            <asp:DropDownList ID="ddlUsertype" runat="server" class="form-control" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
+                                <asp:ListItem Value="admin">Admin</asp:ListItem>
+                                <asp:ListItem Value="venuemanager">Venue Manager</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-            <div id="userGeneralInfo">
+            <div id="userGeneralInfo" runat="server">
                 <div class="col-lg-12 well">
                     <div class="row">
-                       
-                            <h3>General Info</h3>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <asp:TextBox ID="txtName" runat="server" class="form-control" placeholder="Enter your name"></asp:TextBox>
-                                </div>
+
+                        <h3>General Info</h3>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <asp:TextBox ID="txtName" runat="server" class="form-control" placeholder="Enter your name"></asp:TextBox>
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Address</label>
-                                    <asp:TextBox ID="txtAddress" runat="server" class="form-control" placeholder="Enter your parmanent Address"></asp:TextBox>
-                                </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Address</label>
+                                <asp:TextBox ID="txtAddress" runat="server" class="form-control" placeholder="Enter your parmanent Address"></asp:TextBox>
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <asp:TextBox ID="txtEmail" runat="server" class="form-control" placeholder="Enter your Email"></asp:TextBox>
-                                </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <asp:TextBox ID="txtEmail" runat="server" class="form-control" placeholder="Enter your Email"></asp:TextBox>
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Contact Number</label>
-                                    <asp:TextBox ID="txtContactnumber" runat="server" class="form-control" placeholder="Enter your contact number"></asp:TextBox>
-                                </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>Contact Number</label>
+                                <asp:TextBox ID="txtContactnumber" runat="server" class="form-control" placeholder="Enter your contact number"></asp:TextBox>
                             </div>
-                       
+                        </div>
+
                     </div>
                 </div>
             </div>
+            <div id="venueGeneralInfo" runat="server">
+                <div class="col-lg-12 well">
+                    <div class="row">
 
-            <div class="col-lg-12 well">
-                <div class="row">
-                   
                         <h3>Venue General Info</h3>
                         <div class="col-sm-12">
                             <div class="form-group">
@@ -101,7 +101,8 @@
                             </div>
 
                         </div>
-                   
+
+                    </div>
                 </div>
             </div>
         </div>
